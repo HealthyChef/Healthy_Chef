@@ -60,3 +60,5 @@ The app allows users to browse through a list of cooking recipes to find the one
 * Profile Screen Tab -> Text fields to be modified by questions
 
 ## Wireframes
+
+<img src="xyz.jpg" width=800><br>
