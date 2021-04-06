@@ -56,7 +56,7 @@ The app allows users to browse through a list of cooking recipes to find the one
 * Login -> Featured Recipes Tab (if login successful)
 * Register -> Featured Recipes Tab (if register successful)
 * Featured Recipes Tab -> Detail Activity of Recipe Screen
-* Explore Tab -> Detail Activity with search bar
+* Explore/Search Tab -> Detail Activity of Recipe Screen
 * Profile Screen Tab -> Text fields to be modified by questions
 
 ## Wireframes
