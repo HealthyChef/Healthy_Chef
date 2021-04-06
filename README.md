@@ -61,4 +61,4 @@ The app allows users to browse through a list of cooking recipes to find the one
 
 ## Wireframes
 
-<img src="xyz.jpg" width=800><br>
+<img src="Wireframe.PNG" width=600><br>
