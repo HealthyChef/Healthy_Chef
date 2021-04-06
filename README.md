@@ -23,6 +23,7 @@ The app allows users to browse through a list of cooking recipes to find the one
 * A user login and sign up screen.
 * A main acivity page consisting of featured recipes.
 * Detail activity for the recipes, its nutritional facts, and possibly a cooking video.
+* Explore tab to search for a specific recipe
 * A profile page with name, username, birthday, weight, height, calculated BMI, and saved/favorited recipes.
 
 **Optional Nice-to-have Stories**
@@ -38,16 +39,24 @@ The app allows users to browse through a list of cooking recipes to find the one
     * List of ingredients 
 * Detail Activity of Recipe Screen
     * Includes the recipe name, total calories, a list of ingredients, preparation instructions, possible a video
+* Explore Tab 
+    * Includes a search bar and recent searches for certain recipes
 * Profile Screen Tab
     * Includes user's information, saved/favorite recipes, etc
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
-* Recipe
-* Explore
-* Profile
+* Featured Recipes tab
+* Explore/Search tab
+* Profile tab
 
 **Flow Navigation** (Screen to Screen)
+* Login -> Register (making new account)
+* Login -> Featured Recipes Tab (if login successful)
+* Register -> Featured Recipes Tab (if register successful)
+* Featured Recipes Tab -> Detail Activity of Recipe Screen
+* Explore Tab -> Detail Activity with search bar
+* Profile Screen Tab -> Text fields to be modified by questions
 
 ## Wireframes
