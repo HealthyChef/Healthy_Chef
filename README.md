@@ -65,6 +65,7 @@ The app allows users to browse through a list of cooking recipes to find the one
 <img src="Wireframe.PNG" width=600><br>
 
 ## Schema
+### Models
 #### Recipe
 
 | Property     | Type     | Description |
