@@ -4,6 +4,7 @@
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
+2. [Schema](#Schema)
 
 ## Overview
 The app allows users to browse through a list of cooking recipes to find the one fit for their diet. 
@@ -62,3 +63,38 @@ The app allows users to browse through a list of cooking recipes to find the one
 ## Wireframes
 
 <img src="Wireframe.PNG" width=600><br>
+
+### Schema
+#### Recipe
+
+| Property     | Type     | Description |
+| --------     | -------- | -------- |
+| objectId     | Number   | unique id for each recipe  |
+| author       | String   | author that created the recipe |
+| image        | File     | image of the recipe |
+| title        | String   | name of the recipe |
+| ingredients  | String   | ingredients of the recipe |
+| isSaved      | Boolean  | favorite recipe saved by user |
+
+#### User
+
+| Property     | Type      | Description        |
+| --------     | ------    | -----------        |
+| Username     | String    | userame for each id|
+| password     | Char/Array| unique password    |
+| DOB          | Date      | MM/dd/yyyy         |
+| Height       | Double    | height of the user |
+| Weight       | Double    | weight of the user |
+| Profile image| File      | image of the user  |
+
+### Networking
+#### List of Networking requests by screen
+* Login Screen
+    * (Create/POST) Create a new account using Parse server
+    * (Read/GET) Query logged in 
+* Home Screen
+    * (Read/Get) Query random recipes from spoonacular API
+
+* Profile Screen
+    * (Read/GET) Query logged in user object
+    * (Update/PUT) Update user profile image
