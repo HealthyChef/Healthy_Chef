@@ -21,7 +21,7 @@ The app allows users to browse through a list of cooking recipes to find the one
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 **Required Must-have Stories**
-* A user login and sign up screen.
+* A user login and sign up screen. ✓
 * A main activity page consisting of featured recipes.
 * Detail activity for the recipes, its nutritional facts, and possibly a cooking video.
 * Explore tab to search for a specific recipe
