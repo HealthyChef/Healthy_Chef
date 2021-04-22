@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159859169081",
+    "project_id": "healthy-chef",
+    "storage_bucket": "healthy-chef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159859169081:android:cde21ffb90c560e071bae8",
+        "android_client_info": {
+          "package_name": "com.example.healthy_chef"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159859169081-uf91j5vvt20ittd2p99q8uq1mvm05ph7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiHXjQqO-PL0-9uZKGqQ7zh_tpUeeKn1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159859169081-uf91j5vvt20ittd2p99q8uq1mvm05ph7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
