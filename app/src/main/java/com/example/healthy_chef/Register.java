@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -24,7 +25,7 @@ import java.util.Map;
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
     // Define class variables from the page
-    private Button b_register;
+    private Button b_register, b_back;
     private EditText et_email, et_name, et_password;
     // firebase/debugging variables
     private static final String TAG = "Register.java";
@@ -40,10 +41,11 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_register);
 
         // set class variables equal to their inputs
-        et_email = (EditText) findViewById(R.id.et_register_email);
-        et_name = (EditText) findViewById(R.id.et_register_name);
-        et_password = (EditText) findViewById(R.id.et_register_password);
-        b_register = (Button) findViewById(R.id.b_register);
+        et_email = findViewById(R.id.et_register_email);
+        et_name = findViewById(R.id.et_register_name);
+        et_password = findViewById(R.id.et_register_password);
+        b_register = findViewById(R.id.b_register);
+        b_back = findViewById(R.id.b_back);
 
         // get current activity instance
         firebaseAuth = FirebaseAuth.getInstance();

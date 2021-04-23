@@ -81,7 +81,7 @@ The app allows users to browse through a list of cooking recipes to find the one
 
 | Property     | Type      | Description        |
 | --------     | ------    | -----------        |
-| Username     | String    | userame for each id|
+| Username     | String    | username for each id|
 | password     | Char/Array| unique password    |
 | DOB          | Date      | MM/dd/yyyy         |
 | Height       | Double    | height of the user |
