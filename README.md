@@ -1,5 +1,4 @@
-# Healthy Chef
-
+# Healthy Chef <img src="HealthyChef.png" width=48><br>
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
