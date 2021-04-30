@@ -43,4 +43,7 @@ dependencies {
     implementation "androidx.appcompat:appcompat:${appCompatVersion}"
     implementation "com.google.android.material:material:${designSupportVersion}"
 
+    implementation 'com.codepath.libraries:asynchttpclient:2.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
 }
