@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -23,4 +23,13 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/menu_bottom_navigation" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/b_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:insetLeft="150dp"
+        android:insetTop="270dp"
+        android:insetRight="150dp"
+        android:text="Logout" />
+
+</RelativeLayout>
