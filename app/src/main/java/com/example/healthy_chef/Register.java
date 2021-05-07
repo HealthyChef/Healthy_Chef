@@ -84,8 +84,8 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                                 Toast.makeText(Register.this, "Your account was made!",
                                         Toast.LENGTH_SHORT).show();
                                 // ~~include email value for next activity~~
-                                // After user is successfully verified, login and move to the RecipeFeed page.
-                                startActivity(new Intent(Register.this, RecipeFeed.class).putExtra("email", email));
+                                // After user is successfully verified, login and move to the MainActivity page.
+                                startActivity(new Intent(Register.this, MainActivity.class).putExtra("email", email));
                                 //startActivity(new Intent(Register.this, RegistrationInfo.class).putExtra("email_from_reg", email));
                             } // display which error using errCode
                             else if (!task.isSuccessful()){

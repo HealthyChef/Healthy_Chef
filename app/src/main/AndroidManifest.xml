@@ -21,7 +21,6 @@
         </activity>
         <activity android:name=".Register"></activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".RecipeFeed"></activity>
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@ public class Recipe {
     String image;
 
     public Recipe(JSONObject jsonObject) throws JSONException {
+
         id = jsonObject.getString("id");
         title = jsonObject.getString("title");
         summary = jsonObject.getString("summary");
@@ -39,11 +40,13 @@ public class Recipe {
     }
 
     public String getSummary() {
+        summary = summary.replace("<b>", "");
+        summary = summary.replace("</b>", "");
         return summary;
     }
 
     public String getServings() {
-        return servings;
+        return "Number of servings: " + servings;
     }
 
     public String getImage() {
