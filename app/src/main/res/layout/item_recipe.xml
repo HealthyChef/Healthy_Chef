@@ -11,11 +11,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="false"
         android:layout_marginBottom="5dp"
         android:adjustViewBounds="true"
-        android:maxWidth="200dp"
-        android:maxHeight="200dp"
+        android:maxWidth="500dp"
+        android:maxHeight="500dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
@@ -23,9 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivRecipeImage"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="10dp"
-        android:layout_toEndOf="@+id/ivRecipeImage"
+        android:layout_alignParentStart="true"
         android:textSize="18sp"
         android:textStyle="bold"
         tools:text="Recipe Name" />
@@ -35,17 +32,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvRecipeName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="10dp"
-        android:layout_toEndOf="@+id/ivRecipeImage"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="16sp"
         tools:text="Number of servings" />
 
     <TextView
         android:id="@+id/tvSummary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ivRecipeImage"
+        android:layout_below="@+id/tvServing"
         android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
         android:paddingBottom="10dp"
         tools:text="Summary of the recipe here" />
 
