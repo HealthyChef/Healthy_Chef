@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et_email = (EditText) findViewById(R.id.et_email);
-        et_name = (EditText) findViewById(R.id.et_name);
+        //et_email = (EditText) findViewById(R.id.et_email);
+        //et_name = (EditText) findViewById(R.id.et_name);
         b_logout = (Button) findViewById(R.id.b_logout);
 
         b_logout.setOnClickListener(this);

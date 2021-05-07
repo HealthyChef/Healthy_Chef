@@ -59,6 +59,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             // user pressed on register button, send to register activity
             case R.id.tv_login_register:
                 startActivity(new Intent(this, Register.class));
+                finish();
                 break;
         }
     }

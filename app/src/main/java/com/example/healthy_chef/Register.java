@@ -52,6 +52,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
 
         // listen if the user has clicked the register button
         b_register.setOnClickListener(this);
+        b_back.setOnClickListener(this);
     }
 
     // Check which listener was called
@@ -59,6 +60,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch(v.getId()) {
             // register button was clicked
+            case R.id.b_back:
+                startActivity(new Intent(this, Login.class));
+                finish();
+                break;
             case R.id.b_register:
                 // validated, upload data to the database
                 if (validate()) {
@@ -78,9 +83,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
                                 saveUser();
                                 Toast.makeText(Register.this, "Your account was made!",
                                         Toast.LENGTH_SHORT).show();
-                                // include email value for next activity
-                                startActivity(new Intent(Register.this, RegistrationInfo.class)
-                                        .putExtra("email_from_reg", email));
+                                // ~~include email value for next activity~~
+                                // After user is successfully verified, login and move to the RecipeFeed page.
+                                startActivity(new Intent(Register.this, RecipeFeed.class).putExtra("email", email));
+                                //startActivity(new Intent(Register.this, RegistrationInfo.class).putExtra("email_from_reg", email));
                             } // display which error using errCode
                             else if (!task.isSuccessful()){
                                 String errorCode = ((FirebaseAuthException) task.getException()).getMessage();
