@@ -17,11 +17,15 @@ The app allows users to browse through a list of cooking recipes to find the one
 - **Habit**: This app can be used at least once or three times a day for cooking purposes. 
 - **Scope**: The user must create an account and answer several questions based on their health for their profile page. The user's height and weight can determine their Body Mass Index.
 
+### App Walkthough GIF
+
+<img src="Healthy_Chef_Walkthrough.gif" width=250><br>
+
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 **Required Must-have Stories**
 * A user login and sign up screen. ✓
-* A main activity page consisting of featured recipes.
+* A main activity page consisting of featured recipes. ✓
 * Detail activity for the recipes, its nutritional facts, and possibly a cooking video.
 * Explore tab to search for a specific recipe
 * A profile page with name, username, birthday, weight, height, calculated BMI, and saved/favorited recipes.
@@ -32,10 +36,10 @@ The app allows users to browse through a list of cooking recipes to find the one
 
 ### 2. Screen Archetypes
 * Login - using parse oauth?
-* Register - user can sign up
-* Featured Recipes Tab
-    * Displays recipe name
-    * Shows picture of cooked dish
+* Register - user can sign up ✓
+* Featured Recipes Tab ✓
+    * Displays recipe name ✓
+    * Shows picture of cooked dish ✓
     * List of ingredients 
 * Detail Activity of Recipe Screen
     * Includes the recipe name, total calories, a list of ingredients, preparation instructions, possible a video
