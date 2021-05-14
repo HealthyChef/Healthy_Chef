@@ -9,9 +9,9 @@
         android:title="Home"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_compose"
+        android:id="@+id/action_search"
         android:icon="@android:drawable/ic_menu_edit"
-        android:title="Compose"
+        android:title="Search"
         app:showAsAction="always" />
     <item
         android:id="@+id/action_profile"

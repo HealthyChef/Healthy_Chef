@@ -4,32 +4,18 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.codepath.asynchttpclient.AsyncHttpClient;
-import com.codepath.asynchttpclient.RequestParams;
-import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler;
+import com.example.healthy_chef.fragments.ProfileFragment;
 import com.example.healthy_chef.fragments.RecipesFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import okhttp3.Headers;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -66,15 +52,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Toast.makeText(MainActivity.this, "Home!", Toast.LENGTH_SHORT).show();
                         fragment = new RecipesFragment();
                         break;
-                    case R.id.action_compose:
+                    case R.id.action_search:
                         // TODO: Update fragment - search? Change the id names later on.
-                        Toast.makeText(MainActivity.this, "Compose!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Search!", Toast.LENGTH_SHORT).show();
                         fragment = new RecipesFragment();
                         break;
                     case R.id.action_profile:
                         // TODO: Update fragment - profile. Change the id names later on.
                         Toast.makeText(MainActivity.this, "Profile!", Toast.LENGTH_SHORT).show();
-                        fragment = new RecipesFragment();
+                        fragment = new ProfileFragment();
                     default:
                         break;
                     }
