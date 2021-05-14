@@ -21,6 +21,8 @@ The app allows users to browse through a list of cooking recipes to find the one
 
 <img src="Healthy_Chef_Walkthrough.gif" width=250><br>
 
+<img src="Finalized Wireframe.gif" width=250><br>
+
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 **Required Must-have Stories**
