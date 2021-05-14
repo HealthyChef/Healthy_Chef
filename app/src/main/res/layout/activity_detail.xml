@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvRecipeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        tools:text="5 Minute Gluten Free Wonder Buns" />
+
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="For 90 cents per serving, this recipe covers 14% of your daily requirements of vitamins and minerals. One serving contains 258 calories, 11g of protein, and 15g of fat. It is a good option if you're following a gluten free, dairy free, and vegetarian diet. A mixture of almond meal, salt, sesame seeds, and a handful of other ingredients are all it takes to make this recipe so yummy. This recipe from Foodista has 23 fans. From preparation to the plate, this recipe takes roughly 45 minutes. All things considered, we decided this recipe deserves a spoonacular score of 58%. This score is solid. Try Skinny Gluten Free Hamburger Buns (like One Buns!), Gluten Free Pizza Buns – Plus 5 Reasons Your Kids Should Eat Gluten Free, and 1 Minute Sugar-Free Chocolate Mug Cake {Low Carb, Dairy and Gluten Free} for similar recipes." />
+</LinearLayout>

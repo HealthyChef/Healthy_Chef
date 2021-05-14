@@ -1,12 +1,16 @@
 package com.example.healthy_chef;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -48,6 +52,7 @@ public class RecipesAdapter extends RecyclerView.Adapter<RecipesAdapter.ViewHold
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
+        RelativeLayout container;
         ImageView ivRecipeImage;
         TextView tvRecipeName;
         TextView tvServing;
@@ -62,10 +67,22 @@ public class RecipesAdapter extends RecyclerView.Adapter<RecipesAdapter.ViewHold
         }
 
         public void bind(Recipe recipe) {
-            Glide.with(context).load(recipe.getImage()).into(ivRecipeImage);
             tvRecipeName.setText(recipe.getTitle());
             tvServing.setText(recipe.getServings());
             tvSummary.setText(recipe.getSummary());
+            String imageUrl;
+            Glide.with(context).load(recipe.getImage()).into(ivRecipeImage);
+
+            //1. Register click listener on the whole row
+            container.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //2. Navigate to a new activity on tap
+                    Intent i = new Intent(context, DetailActivity.class);
+                    i.putExtra("title", recipe.getTitle());
+                    context.startActivity(i);
+                }
+            });
         }
     }
 }
