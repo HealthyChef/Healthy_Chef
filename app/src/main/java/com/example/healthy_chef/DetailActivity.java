@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import org.parceler.Parcels;
+
 public class DetailActivity extends AppCompatActivity {
 
     TextView tvRecipeName;
@@ -18,7 +20,8 @@ public class DetailActivity extends AppCompatActivity {
         tvRecipeName = findViewById(R.id.tvRecipeName);
         tvSummary = findViewById(R.id.tvSummary);
 
-        String title = getIntent().getStringExtra("title");
-        tvRecipeName.setText(title);
+        Recipe recipe = Parcels.unwrap(getIntent().getParcelableExtra("recipe"));
+        tvRecipeName.setText(recipe.getTitle());
+        tvSummary.setText(recipe.getSummary());
     }
 }

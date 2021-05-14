@@ -18,6 +18,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.Target;
 
+import org.parceler.Parcels;
+
 import java.util.List;
 
 public class RecipesAdapter extends RecyclerView.Adapter<RecipesAdapter.ViewHolder>{
@@ -79,7 +81,7 @@ public class RecipesAdapter extends RecyclerView.Adapter<RecipesAdapter.ViewHold
                 public void onClick(View v) {
                     //2. Navigate to a new activity on tap
                     Intent i = new Intent(context, DetailActivity.class);
-                    i.putExtra("title", recipe.getTitle());
+                    i.putExtra("recipe", Parcels.wrap(recipe));
                     context.startActivity(i);
                 }
             });
