@@ -28,14 +28,14 @@ The app allows users to browse through a list of cooking recipes to find the one
 * A main activity page consisting of featured recipes. ✓
 * Detail activity for the recipes, its nutritional facts, and possibly a cooking video.
 * Explore tab to search for a specific recipe
-* A profile page with name, username, birthday, weight, height, calculated BMI, and saved/favorited recipes.
+* A profile page with calculated BMI. ✓
 
 **Optional Nice-to-have Stories**
 * A nice background theme for the activities.
 * Detail activity that includes a cooking video for different recipes.
 
 ### 2. Screen Archetypes
-* Login - using parse oauth?
+* Login - using Firebase ✓
 * Register - user can sign up ✓
 * Featured Recipes Tab ✓
     * Displays recipe name ✓
@@ -45,8 +45,8 @@ The app allows users to browse through a list of cooking recipes to find the one
     * Includes the recipe name, total calories, a list of ingredients, preparation instructions, possible a video
 * Explore Tab 
     * Includes a search bar and recent searches for certain recipes
-* Profile Screen Tab
-    * Includes user's information, saved/favorite recipes, etc
+* Profile Screen Tab ✓
+    * Includes user's information, calculated BMI, etc ✓
 
 ### 3. Navigation
 
