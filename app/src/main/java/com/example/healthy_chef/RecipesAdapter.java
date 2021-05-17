@@ -2,7 +2,6 @@ package com.example.healthy_chef;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,13 +9,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.Target;
 
 import org.parceler.Parcels;
 
@@ -63,9 +60,10 @@ public class RecipesAdapter extends RecyclerView.Adapter<RecipesAdapter.ViewHold
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             ivRecipeImage = itemView.findViewById(R.id.ivRecipeImage);
-            tvRecipeName = itemView.findViewById(R.id.tvRecipeName);
+            tvRecipeName = itemView.findViewById(R.id.tvTitle);
             tvServing = itemView.findViewById(R.id.tvServing);
             tvSummary = itemView.findViewById(R.id.tvSummary);
+            container = itemView.findViewById(R.id.container);
         }
 
         public void bind(Recipe recipe) {

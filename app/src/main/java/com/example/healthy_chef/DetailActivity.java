@@ -9,7 +9,7 @@ import org.parceler.Parcels;
 
 public class DetailActivity extends AppCompatActivity {
 
-    TextView tvRecipeName;
+    TextView tvTitle;
     TextView tvSummary;
 
     @Override
@@ -17,11 +17,11 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        tvRecipeName = findViewById(R.id.tvRecipeName);
+        tvTitle = findViewById(R.id.tvTitle);
         tvSummary = findViewById(R.id.tvSummary);
 
         Recipe recipe = Parcels.unwrap(getIntent().getParcelableExtra("recipe"));
-        tvRecipeName.setText(recipe.getTitle());
+        tvTitle.setText(recipe.getTitle());
         tvSummary.setText(recipe.getSummary());
     }
 }
